@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleAI</title>
 
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <header class="header">
+        <h1>🤖 ChatIn</h1>
+        <button id="settingBtn">⚙️</button>
+    </header>
+
+    <main id="chatContainer" class="chat-container">
+
+        <div class="message ai">
+            Halo! Saya siap membantu.
+        </div>
+
+    </main>
+
+    <div id="typingIndicator" hidden>
+        AI sedang mengetik...
+    </div>
+
+    <footer class="input-area">
+
+        <textarea
+            id="prompt"
+            placeholder="Ketik pesan..."
+            rows="1"></textarea>
+
+        <button id="sendBtn">
+            Kirim
+        </button>
+
+    </footer>
+
+</div>
+
+<!-- Modal Pengaturan -->
+
+<div id="settingsModal" class="modal" hidden>
+
+    <div class="modal-content">
+
+        <h2>Pengaturan</h2>
+
+        <label>
+            API Key
+        </label>
+
+        <input
+            id="apiKey"
+            type="password"
+            placeholder="gsk_...">
+
+        <div class="modal-buttons">
+
+            <button id="saveSetting">
+                Simpan
+            </button>
+
+            <button id="closeSetting">
+                Tutup
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="Config.js"></script>
+<script src="Script.js"></script>
+
+</body>
+</html>
